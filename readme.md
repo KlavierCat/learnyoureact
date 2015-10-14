@@ -47,3 +47,17 @@ Change state by using ```this.setState```.
 <br/>
 https://facebook.github.io/react/docs/component-api.html
 https://facebook.github.io/react/docs/component-specs.html
+
+### Lesson 6 - css
+Define style as variable:
+```js
+var style = {
+  tableContent: {
+    border: "1px solid black"
+  }
+};
+```
+```html
+<td style={style.tableContent}>
+```
+https://facebook.github.io/react/tips/inline-styles.html
