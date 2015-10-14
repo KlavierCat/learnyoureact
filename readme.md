@@ -72,3 +72,8 @@ var todo = this.props.data.map(function(obj) {
   return <Todo title={obj.title} key={obj.title}>{obj.detail}</Todo>
 });
 ```
+
+### Lesson 8 - Isomorphic (React on the front-end)
+```
+$ npm install browserify reactify
+```
