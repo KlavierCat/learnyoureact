@@ -40,3 +40,10 @@ React.createClass({
   /* ... */
 );
 ```
+
+### Lesson 5 - state
+Define mutable values with ```this.state```, which is private to each component.
+Change state by using ```this.setState```.
+<br/>
+https://facebook.github.io/react/docs/component-api.html
+https://facebook.github.io/react/docs/component-specs.html
