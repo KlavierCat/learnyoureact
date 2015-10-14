@@ -26,3 +26,17 @@ Passing properties from parents to children
   <td style={{border: "1px solid black"}}{this.props.title}</td>
   <td style={{border: "1px solid black"}}{this.props.children}</td>
 ```
+
+### Lesson 4 - propTypes
+Validate that components are passed with all needed properties by:
+```propTypes``` and ```React.PropTypes```. Example:
+```js
+React.createClass({
+  propTypes: {
+    name: React.PropTypes.string.isRequired,
+    id: React.PropTypes.number.isRequired,
+    alt: React.PropTypes.string
+  },
+  /* ... */
+);
+```
