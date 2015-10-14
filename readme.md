@@ -46,6 +46,7 @@ Define mutable values with ```this.state```, which is private to each component.
 Change state by using ```this.setState```.
 <br/>
 https://facebook.github.io/react/docs/component-api.html
+<br/>
 https://facebook.github.io/react/docs/component-specs.html
 
 ### Lesson 6 - css
@@ -80,5 +81,10 @@ $ npm install browserify reactify
 
 ### Lesson 9 - CSS2
 https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html
+<br/>
 https://facebook.github.io/react/docs/events.html
+<br/>
 https://facebook.github.io/react/docs/forms.html
+
+### Lesson 10 - Event
+(same as above)
