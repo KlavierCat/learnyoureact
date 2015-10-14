@@ -28,7 +28,7 @@ var data = [
     detail: process.argv[4] || ""
   }
 ];
-/*
+
 app.use('/bundle.js', function(req, res) {
   res.setHeader('content-type', 'application/javascript');
   browserify('./app.js')
@@ -36,7 +36,7 @@ app.use('/bundle.js', function(req, res) {
     .bundle()
     .pipe(res);
 });
-*/
+
 app.use('/', function(req, res) {
   var initialData = JSON.stringify(data);
   var markup = ReactDOMServer.renderToString(React.createElement(TodoBox, {data: data}));
