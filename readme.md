@@ -61,3 +61,14 @@ var style = {
 <td style={style.tableContent}>
 ```
 https://facebook.github.io/react/tips/inline-styles.html
+
+### Lesson 7 - Props from Server
+React makes use of a ```key``` attribute to keep track of each component in the VirtualDOM. This allows it to update the real DOM as sensibly and infrequently as possible.
+```html
+<TodoList data = {this.props.data} />
+```
+```js
+var todo = this.props.data.map(function(obj) {
+  return <Todo title={obj.title} key={obj.title}>{obj.detail}</Todo>
+});
+```
