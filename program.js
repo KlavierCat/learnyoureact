@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 
 var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 var DOM = React.DOM;
 var body = DOM.body;
 var div = DOM.div;
@@ -38,11 +39,11 @@ app.use('/bundle.js', function(req, res) {
 */
 app.use('/', function(req, res) {
   var initialData = JSON.stringify(data);
-  var markup = React.renderToString(React.createElement(TodoBox, {data: data}));
+  var markup = ReactDOMServer.renderToString(React.createElement(TodoBox, {data: data}));
 
   res.setHeader('Content-Type', 'text/html');
 
-  var html = React.renderToStaticMarkup(body(null,
+  var html = ReactDOMServer.renderToStaticMarkup(body(null,
       div({id: 'app', dangerouslySetInnerHTML: {__html: markup}}),
       script({id: 'initial-data',
               type: 'text/plain',
